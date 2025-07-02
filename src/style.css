@@ -1,0 +1,175 @@
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('/fonts/Proxima-Nova-Semibold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('/fonts/Proxima-Nova-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ikea Sans';
+  src: url('/fonts/IKEA-Sans-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  --font-family-ui: 'Proxima Nova', sans-serif;
+  --font-family-body: 'Ikea Sans', sans-serif;
+
+  --font-size-base: 1rem;
+  --font-size-md: 1.125rem;
+  --font-size-lg: 3rem;
+  --font-size-xl: 4rem;
+
+  --text-color-base: hsl(0, 0%, 5%);
+  --text-color-muted: hsl(210, 5%, 40%);
+  --primary-color: #D82C2C;
+  --primary-color-hover: #B81F1F;
+  --background-color: hsl(0, 0%, 98%);
+  --link-color: hsl(211, 83%, 55%);
+  --gray-color: hsl(210, 5%, 90%);
+  --gray-color-hover: hsl(210, 5%, 85%);
+
+  --padding-lg: 2.8125rem;
+  --padding-md: 2.1875rem;
+  --padding-sm: 1rem;
+  --padding-xs: 0.5rem;
+
+  --border-radius-sm: 0.5rem;
+  --border-radius-md: 1rem;
+  --border-radius-lg: 3rem;
+}
+@media (max-width: 1024px) {
+  :root {
+    --font-size-md: 1rem;
+    --font-size-lg: 2.5rem;
+    --font-size-xl: 3rem;
+
+    --padding-lg: 1.5rem;
+    --padding-md: 1.25rem;
+    --padding-sm: 0.75rem;
+    --padding-xs: 0.5rem;
+
+    --border-radius-sm: 0.25rem;
+    --border-radius-md: 0.75rem;
+  }
+}
+
+#app {
+  min-height: 100vh;
+}
+
+body, html {
+  font-family: var(--font-family-ui);
+  color: var(--text-color-base);
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: var(--font-size-xl);
+  line-height: 1;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: var(--font-size-lg);
+}
+
+p {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-base);
+  font-weight: 400;
+  color: var(--text-color-base);
+  margin: 0;
+}
+
+.muted {
+  color: var(--text-color-muted)
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li, a {
+  color: var(--text-color-base);
+  text-decoration: none;
+}
+
+.nav-link-text {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.5rem;
+}
+
+/* red cuz china */
+::selection {
+  background: #ffb7b7;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+}
+
+.col-50 {
+  width: 50%;
+  margin: 0;
+}
+.col-35 {
+  width: 35%;
+  margin: 0;
+}
+.col {
+  width: fit-content;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .col-50,
+  .col-35 {
+      width: 100%;
+  }
+}
+
+.content-wrapper {
+  padding: var(--padding-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--padding-md);
+}
+
+.text-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--padding-sm);
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
