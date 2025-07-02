@@ -33,7 +33,7 @@ const slides = [
         <vueper-slide 
             v-for="(slide, i) in slides" :key="i">
             <template #content>
-                <CloudImage loading="eager" :imageName="slide.image" :lazy="i > 2" :objectPosition="slide.position"/>
+                <CloudImage :loading="i === 0 ? 'eager' : 'lazy'" :imageName="slide.image" :lazy="i > 2" :objectPosition="slide.position" />
             </template>
         </vueper-slide>
     </vueper-slides>

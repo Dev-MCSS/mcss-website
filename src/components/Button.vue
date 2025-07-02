@@ -15,9 +15,8 @@ defineProps({
 
 <template>
     <component 
-        :is="href ? 'a' : to ? 'RouterLink' : 'button'"
-		:href="href"
-		:to="to"
+        :is="href ? 'a' : to ? RouterLink : 'button'"
+		v-bind="href ? { href } : to ? { to } : {}"
         :class="[`btn-${variant}`]"
     >
         <span class="label">{{ label }}</span>

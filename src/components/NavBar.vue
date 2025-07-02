@@ -81,7 +81,7 @@ function toggleMenu() {
                     </li>
                     <li  class="nav-member-btn">
                         <div>
-                            <Btn label="Become a member" variant="primary" to="membership"/>
+                            <Btn label="Become a member" variant="primary" href="/membership"/>
                         </div>
                     </li>
                 </ul>
