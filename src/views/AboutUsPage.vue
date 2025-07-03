@@ -53,7 +53,7 @@ import Btn from '@/components/Button.vue';
 }
 
 .page_polaroid {
-	width: 90%;
+	width: 100%;
 	
 }
 

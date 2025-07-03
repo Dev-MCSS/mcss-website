@@ -28,12 +28,12 @@ const props = defineProps({
     flex-direction: column;
     gap: var(--padding-sm);
     width: 100%;
-    align-items: center;
 }
 
 .member-image-wrapper {
-    width: clamp(15vw, 150px, 200px);
+    width: clamp(25vw, 140px, 200px);
     padding: var(--padding-md);
+    max-width: 100%;
 }
 
 .member-image {
