@@ -10,9 +10,9 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
-  // used for local development
-	server: {
-		host: '0.0.0.0',
-		port: 5173,
-	}
+  // // used for local development
+	// server: {
+	// 	host: '0.0.0.0',
+	// 	port: 5173,
+	// }
 })
