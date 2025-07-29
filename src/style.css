@@ -64,6 +64,7 @@
 
 #app {
   min-height: 100vh;
+  margin-top: 56px; /* Adjust for fixed navbar height */
 }
 
 body, html {

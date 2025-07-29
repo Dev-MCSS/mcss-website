@@ -103,7 +103,7 @@ nav {
     text-transform: uppercase;
     width: 100%;
     max-width: 100%;
-    position: sticky;
+    position: fixed;
     z-index: 1000;
     top: 0;
     background-color: var(--background-color);
