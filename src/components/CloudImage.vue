@@ -1,9 +1,9 @@
 <script setup>
 import { AdvancedImage, lazyload, responsive, placeholder } from "@cloudinary/vue";
 import { Cloudinary } from "@cloudinary/url-gen";
-import { quality } from "@cloudinary/url-gen/actions/delivery";
-import { fill } from "@cloudinary/url-gen/actions/resize";
+import { format, quality } from "@cloudinary/url-gen/actions/delivery";
 import { computed } from 'vue';
+
 
 const cld = new Cloudinary({
     cloud: {
@@ -13,7 +13,7 @@ const cld = new Cloudinary({
 
 const plugins = [
     lazyload(),
-    responsive({ steps: 200 }),
+    responsive({ steps: 100 }),
     placeholder({ mode: 'blur' })
 ]
 
@@ -30,7 +30,7 @@ const props = defineProps({
 });
 
 const myImg = cld.image(`mcss/${props.imageName}`)
-myImg.quality('auto')
+myImg.delivery(quality('auto')).delivery(format('auto'))
 
 // default alt based on file name
 const computedAlt = computed(() => {
