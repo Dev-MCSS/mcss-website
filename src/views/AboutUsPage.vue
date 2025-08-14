@@ -11,10 +11,9 @@ import Btn from '@/components/Button.vue';
 			<div class="content-wrapper">
 				<div class="text-wrapper">
 					<h1>About Us</h1>
-					<p>Founded in 1944, we provide a variety of events to over 1,500 active members and help our members succeed in school and life.</p>
-					<p>Our short-term goal is to provide our students with valuable events to make their student life more meaningful, while our long-term goal is to motivate and encourage our students to give back to their community and excel academically by providing them with helpful services including seminars, lessons, and talks.</p>
-					<p>MCSS is a non-profit organization registered under the Students' Society of McGill University. All our proceeds either go to charity or are used to provide our students with more valuable services.</p>
-					<p>Our events range from large scale shows to career planning and information seminars. In addition, we organize dinner outings, networking opportunities and parties for our members.</p>
+					<p>McGill Chinese Students’ Society (MCSS) is the largest and most influential cultural student organization in Eastern Canada. We strive to enrich student life at McGill by creating meaningful experiences that celebrate Chinese heritage, foster personal and academic growth, and build lasting friendships. Whether it’s through festive cultural events, fun nights out, or casual dinners, our goal is to create a welcoming and dynamic space for students from all backgrounds.</p>
+					<p>Founded in 1944, MCSS serves a vibrant community of over 1,500 active members. As a non-profit organization officially recognized under the Students' Society of McGill University (SSMU), all proceeds from our events are reinvested to support charitable causes and enhance future programming for our members.</p>
+					<p>Whether you're looking to connect with your culture, meet new people, or simply get more out of your university experience, MCSS welcomes you to be part of our story.</p>
 				</div>
 			</div>
 		</div>
