@@ -1,6 +1,11 @@
 export const pastCards = [
     {
         years: '2023-2024',
+        front: 'card/front_24-25',
+        back: 'card/front_24-25'
+    },
+    {
+        years: '2023-2024',
         front: 'card/front_23-24',
         back: 'card/back_23-24'
     },

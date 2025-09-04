@@ -23,7 +23,7 @@ import PastCards from '@/components/PastCards.vue';
 						By buying our card, you are also showing your support, and enabling us to keep producing banger events.
 					</p>
                 </div>
-                <Btn label="Buy Now" variant="primary"/>
+                <Btn label="Buy Now" variant="primary" href="https://docs.google.com/forms/d/e/1FAIpQLSdFElYEDNhXVAlUGTbM58hQRzkiW1PWmargkD0Lhls28KB0EA/viewform?fbclid=PAZXh0bgNhZW0CMTEAAacK6vJUuutmZE46DGgtigdP1UvfWCgBAfXyit5agQqqgLGMaXaS_vQdav_q0w_aem_CjsSmuhIKFy4fk1w24Mmyg" target="_default"/>
 				<small>
 					*Available for purchase at the start of the school year and at events throughout the year.
 				</small>
@@ -31,7 +31,7 @@ import PastCards from '@/components/PastCards.vue';
         </div>
         <div class="col-50">
 			<div class="membership-card-wrapper">
-        	<CloudImage class="membership-card" imageName="card/front_24-25" />
+        	<CloudImage class="membership-card" imageName="card/front_25-26" />
 			</div>
 		</div>
     </div>

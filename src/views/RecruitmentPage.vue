@@ -24,15 +24,15 @@ import SceneAmpharos from '@/components/SceneAmpharos.vue';
 				<div class="text-wrapper">
 					<h2>Open Positions</h2>
 					<div class="positions">
-						<p>Stay tuned...</p>
-						<!-- <PositionCard v-for="position in positions" :key="position" :position="position"/> -->
+						<!-- <p>Stay tuned...</p> -->
+						<PositionCard v-for="position in positions" :key="position" :position="position"/>
 					</div>
 				</div>
-				<!-- <Btn label="Apply" variant="primary" href=""/>
+				<Btn label="Apply" variant="primary" href="https://forms.gle/HCNvXkEEZyMgb5zz6" target="_default"/>
 				<div class="text-wrapper">
-					<small>Application deadline: <strong>Sunday, September 15th</strong></small>
+					<small>Application deadline: <strong>Tuesday, September 9th</strong></small>
 					<small><strong>Interviews:</strong> In-person interviews will be held the week after the deadline.</small>
-				</div> -->
+				</div>
 			</div>
 		</div>
 	</div>
