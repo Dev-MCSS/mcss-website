@@ -15,7 +15,9 @@ import Btn from '@/components/Button.vue';
 					<p>Founded in 1944, MCSS serves a vibrant community of over 1,500 active members. As a non-profit organization officially recognized under the Students' Society of McGill University (SSMU), all proceeds from our events are reinvested to support charitable causes and enhance future programming for our members.</p>
 					<p>Whether you're looking to connect with your culture, meet new people, or simply get more out of your university experience, MCSS welcomes you to be part of our story.</p>
 				</div>
+				<Btn label="Learn more about recruitment" variant="primary" to="recruitment"/>
 			</div>
+			
 		</div>
 		<div class="col-50">
 			<div class="polaroid-wrapper">
@@ -23,7 +25,7 @@ import Btn from '@/components/Button.vue';
 			</div>
 		</div>
 	</div>
-	<div class="row">
+	<!-- <div class="row">
 		<div class="col-35">
 			<div class="content-wrapper">
 				<div class="text-wrapper">
@@ -34,14 +36,14 @@ import Btn from '@/components/Button.vue';
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="row">
+	</div> -->
+	<!-- update later!!! <div class="row">
 		<div class="content-wrapper" style="width: 100%">
 			<div class="team-grid">
 				<TeamCard v-for="member in team" :key="member" :teamMember="member"/>
 			</div>
 		</div>
-	</div>
+	</div> -->
 </template>
 
 <style scoped>
