@@ -27,6 +27,9 @@ import { events } from '@/data/events.js';
 .row {
 	width: 100%;
 }
+.content-wrapper {
+	width: 100%;
+}
 .instagram-btn {
 	background-image: linear-gradient(to right, #ffa052, #D90392);
 }

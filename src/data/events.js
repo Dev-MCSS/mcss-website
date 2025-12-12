@@ -1,4 +1,21 @@
 export const events = {
+    "2025-2026": {
+        span: "2025 - 2026",
+        items: [
+            {
+                title: "Casino Night",
+                image: "events/2025-2026/casino_night_2025.jpg"
+            },
+            {
+                title: "Mooncake Workshop",
+                image: "events/2025-2026/mooncake_2025.jpg"
+            },
+            {
+                title: "Johnny Chay Show",
+                image: "events/2025-2026/johnnychay_2025.jpg"
+            }
+        ]
+    },
     "2024-2025": {
         span: "2024 - 2025",
         items: [

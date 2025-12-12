@@ -135,7 +135,7 @@ li, a {
 .row {
     display: flex;
     flex-wrap: wrap;
-    width: 100vw;
+    width: 100%;
 }
 
 .col-50 {
