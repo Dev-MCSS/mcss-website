@@ -14,3 +14,8 @@ import Footer from '@/components/Footer.vue'
 </template>
 
 <style></style>
+
+<script>
+import { inject } from '@vercel/analytics'
+inject()
+</script>
