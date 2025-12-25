@@ -1,16 +1,16 @@
 <script setup>
 import { VueperSlides, VueperSlide } from 'vueperslides';
 import 'vueperslides/dist/vueperslides.css';
-import CloudImage from '@/components/CloudImage.vue';
+// import CloudImage from '@/components/CloudImage.vue';
 
 // use portrait vertical images for best quality
 const slides = [
-    { image: 'home/casino_night', position: 'top' },
-    { image: 'home/tang_yuan' },
-    { image: 'home/badminton' },
-    { image: 'home/casino_night2' },
-    { image: 'home/lny_party' },
-    { image: 'home/lny_party2' },
+    { image: '/assets/images/home/casino-2025.jpg', position: 'top' },
+    { image: '/assets/images/home/johnny.jpg' },
+    { image: '/assets/images/home/badminton.jpg' },
+    { image: '/assets/images/home/casino-2024.png', position: 'top' },
+    { image: '/assets/images/home/mooncake.jpg' },
+    { image: '/assets/images/home/lny_party.jpg' },
 ]
 
 </script>
@@ -33,7 +33,13 @@ const slides = [
         <vueper-slide 
             v-for="(slide, i) in slides" :key="i">
             <template #content>
-                <CloudImage :loading="i === 0 ? 'eager' : 'lazy'" :imageName="slide.image" :lazy="i > 2" :objectPosition="slide.position" />
+                <img 
+                    :src="slide.image"
+                    :style="{ objectPosition: slide.position }"
+                    :loading="i === 0 ? 'eager' : 'lazy'"
+                    alt="Highlighted Event Image"
+                />
+                <!-- <CloudImage :loading="i === 0 ? 'eager' : 'lazy'" :imageName="slide.image" :lazy="i > 2" :objectPosition="slide.position" /> -->
             </template>
         </vueper-slide>
     </vueper-slides>
